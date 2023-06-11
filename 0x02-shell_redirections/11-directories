@@ -1,2 +1,2 @@
 #!/bin/bash
-count=$(find . -mindepth 1 -type d | wc -1); echo $count
+$(find . -type d -path './*' -print | wc -l)
